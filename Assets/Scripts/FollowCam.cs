@@ -14,7 +14,7 @@ public class FollowCam : MonoBehaviour {
 		S = this;
 		camZ = this.transform.position.z;
 	}
-	void Update () {
+	void FixedUpdate () {
 		// if there's only one line following an if, it doesn't need braces
 		if (poi == null) return; // return if there is no poi
 		// Get the position of the poi
